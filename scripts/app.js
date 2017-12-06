@@ -5,10 +5,14 @@
 (function() {
 
     document.querySelector('.moveLeft').addEventListener('click', function() {
-        moveSlider('left')
+        moveSlider('left');
+        clearInterval(autoPlay);
+        setTimeout(startAutoPlay(), 4000);
     })
     document.querySelector('.moveRight').addEventListener('click', function() {
         moveSlider('right')
+        clearInterval(autoPlay);
+        setTimeout(startAutoPlay(), 4000);
     })
 
     var slider = document.querySelector('.slider');
@@ -68,5 +72,10 @@
             animate(nextSlide, 'left', '%', -100, 0, 1000);
         }
     }
+    var autoPlay;
+    function startAutoPlay() {
+      autoPlay = setInterval(moveSlider, 3000)
+    }
+    startAutoPlay();
 
 }())
