@@ -2,9 +2,9 @@
 
 # Stack
 
-Bootstrap v4 grid.
-Vanilla Javascript.
-SASS (gulpfile inc - in root of project just type 'gulp').
+- Bootstrap v4 grid.
+- Vanilla Javascript.
+- SASS (gulpfile inc - in root of project just type 'gulp').
 
 # Progress
 
