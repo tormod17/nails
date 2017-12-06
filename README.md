@@ -8,7 +8,7 @@
 
 # Progress
 
-I have published my finished result on gh-pages.
+I have published my finished result on [gh-pages](https://tormod17.github.io/nails/).
 Decided to go with sass as it's always nicer to write and read as well as less painful with prefixes. 
 As per task set I didn't spend time on icons, fonts, color or copy. Took a very quick approach to thi. 
 As per missing pictures I cropped from the layout provided, and made use of those. 
