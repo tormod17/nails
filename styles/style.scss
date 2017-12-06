@@ -1,0 +1,302 @@
+@import './vars.scss';
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.sectionHeading {
+    border-top: 2px green solid;
+    display: inline-block;
+    margin: 2em 0;
+}
+
+header,
+.ourApproach,
+.mostLoved,
+.justArrived,
+.testimonial,
+.theBrief {
+    position: relative;
+    &>div {
+        text-align: center;
+        margin: auto;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+header {
+    .menuButton {
+        position: fixed;
+        top: 10;
+        left: 10;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        z-index: 99;
+    }
+}
+
+.howItWorks {
+    background-color: #FEFDFB;
+    text-align: center;
+    padding: 3em;
+
+    .desc {
+        width: 60%;
+        margin: 2em auto;
+    }
+    .items {
+        width: 80%;
+        margin: 2em auto;
+        .col {
+            margin: 1em;
+        }
+    }
+    img {
+        height: 50px;
+        width: 50px;
+    }
+    i {
+        margin: 10px;
+    }
+    span {
+        display: block;
+        color: green;
+    }
+}
+
+.theBrief {
+    text-align: center;
+    @include defaultMobile {
+        display: none;
+    }
+    >div {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1em auto;
+        width: 70%;
+        >div {
+            display: flex;
+        }
+    }
+}
+
+.mostLoved {
+    padding: 3em;
+    @include defaultTablet {
+        padding: 1em;
+    }
+    .carouselWrapper {
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        @include defaultMobile {
+            width: 250px;
+            height: 120px;
+        }
+    }
+    #carousel {
+        height: 560px;
+        width: 940px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        @include defaultLaptop {
+            width: 470px;
+            height: 280px;
+        }
+        @include defaultTablet {
+            width: 350px;
+            height: 160px;
+        }
+        @include defaultMobile {
+            width: 250px;
+            height: 120px;
+        }
+    }
+    .slider {
+        width: 100%;
+        height: 100%;
+        display: block; //position: relative;
+        background: black;
+        .slide {
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: 940px 560px;
+            background-position: center center;
+            @include defaultLaptop {
+                background-size: 470px 280px;
+            }
+            @include defaultTablet {
+                background-size: 350px 160px;
+            }
+            @include defaultMobile {
+                background-size: 250px 120px;
+            }
+        }
+        .slide:nth-child(1) {
+            background-image: url('../images/carousel/carousel-most-loved-1.jpg');
+        }
+        .slide:nth-child(2) {
+            background-image: url('../images/carousel/carousel-most-loved-2.jpg');
+        }
+        .slide:nth-child(3) {
+            background-image: url('../images/carousel/carousel-our-approach-1.jpg');
+        }
+        .slide:nth-child(4) {
+            background-image: url('../images/carousel/carousel-our-approach-2.jpg');
+        }
+    }
+    .carouselWrapper {
+        position: relative;
+    }
+    .moveRight,
+    .moveLeft {
+        position: absolute;
+        top: 50%;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        &:hover {
+            svg {
+                path {
+                    fill: grey;
+                }
+            }
+        }
+    }
+    .moveRight {
+        right: -10px;
+    }
+    .moveLeft {
+        left: -10px;
+        transform: rotate(-180deg);
+    }
+    .dots {
+        position: absolute;
+        bottom: -40px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: block;
+        .dot {
+            display: inline-block;
+            margin: 10px;
+            background-color: grey;
+            width: 15px;
+            height: 15px;
+            border-radius: 25px;
+            opacity: 0.4;
+            transition: all 1s ease;
+        }
+        .selected {
+            background-color: purple;
+            opacity: 1;
+            transition: opacity 1s ease;
+        }
+    }
+}
+
+.ourApproach,
+.justArrived {
+    background-image: url('../images/bg-first-section.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    padding: 6em;
+    @include defaultTablet {
+        padding: 2em;
+    }
+    .textWrapper {
+        color: white;
+        text-align: left;
+    }
+    img {
+        min-width: 350px;
+        @include defaultLaptop {}
+        @include defaultTablet {
+            min-width: 250px;
+        }
+        @include defaultMobile Large {
+            min-width: 200px;
+        }
+    }
+}
+
+.results {
+    text-align: center;
+    padding: 3em;
+    .resultsText {
+        width: 60%;
+        margin: 4em auto;
+    }
+}
+
+.telegraph {
+    height: 500px;
+    padding: 3em;
+    overflow: visible;
+    text-align: center;
+    position: relative;
+    @include defaultMobile Large {
+        display: none;
+    }
+    img {
+        max-height: 500px;
+        max-width: 80%;
+        z-index: 99;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.testimonial {
+    i {
+        color: purple;
+    }
+    .contents {
+        position: absolute;
+        text-align: center;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 65%;
+        .textWrapper {
+            height: 80%;
+            font-size: 1.5em;
+            @include defaultTablet {
+                display: none;
+            }
+            @include defaultMobile {}
+            .textThree {
+                color: purple;
+            }
+        }
+        .contactText {
+            height: 20%;
+            font-size: 1.5em;
+            @include defaultTablet {
+                font-size: 1em;
+            }
+            @include defaultMobile {
+                font-size: 0.5em;
+            }
+        }
+    }
+}

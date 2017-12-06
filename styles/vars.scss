@@ -1,0 +1,39 @@
+@mixin mediaQuery($min, $max, $height) {
+  @if $min != "" and $max != "" and $height != "" {
+    @media(min-width: #{$min}) and (max-width: #{$max}), all and (max-height: #{$height}) {
+      @content;
+    }
+  } @else if  $min != "" and $max != "" and $height == "" {
+    @media(min-width: #{$min}) and (max-width: #{$max}) {
+      @content;
+      }
+  } @else if $min == "" and $height == ""{
+    @media(max-width: #{$max}) {
+      @content;
+      }
+  } @else if $max == "" and $height == "" {
+    @media(min-width: #{$min}) {
+      @content;
+      }
+  }
+}
+
+
+@mixin defaultLaptop {
+  @media all and (max-width: 1000px), all and (max-height: 600px) {
+    @content
+  }
+}
+
+
+@mixin defaultTablet {
+  @media all and (max-width: 780px), all and (max-height: 468px) {
+    @content
+  }
+}
+
+@mixin defaultMobile {
+  @media all and (max-width: 570px), all and (max-height: 350px) {
+    @content
+  }
+}

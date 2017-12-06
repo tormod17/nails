@@ -1,0 +1,37 @@
+/************************************************************
+*
+*	Title: Tangent - FED test
+*	Creator: Anders Jensen - anders.jensen@tangent.co.uk
+*
+************************************************************/
+
+Please find an attached: 
+	- layout file for reference (NailsInc-layout.jpg)
+	- various image assets
+
+
+The purpose of this test is to see how you approach a new build and lay out your front end code. We are particularly looking for how closely you can reproduce a design and how well that code could be maintained in the future by a different developer and fit into a wider site. 
+
+We're also interested in your JavaScript skills, so the test includes a few elements that you could enhance with JavaScript.
+
+We don't anticipate this test should take you very long, however we are looking for candidates who take initiative with their approach. Don't worry about matching fonts and icons or pixel perfect alignment, but feel free to get creative regarding animations on hover states etc.
+
+Please include any relevant notes you feel necessary to explain your work.
+
+
+The Task:
+
+A client has requested the following page to be built, but of course they have not supplied a design for mobile nor tablet view.
+
+
+The copy is still to be confirmed so using “Lorem Ipsum” is fine for now.
+
+
+
+Things to think about:
+	browser compatibility
+	size of different viewports
+	user interaction
+
+
+Enjoy.
