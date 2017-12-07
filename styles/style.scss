@@ -95,7 +95,7 @@ header {
 .mostLoved {
     padding: 3em;
     @include defaultTablet {
-        padding: 1em;
+        padding: 2em;
     }
     .carouselWrapper {
         border: 1px solid rgba(0, 0, 0, 0.3);
