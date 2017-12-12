@@ -10,14 +10,14 @@
 
 I have published my finished result on [gh-pages](https://tormod17.github.io/nails/).
 Decided to go with sass as it's always nicer to write and read as well as less painful with prefixes. 
-As per task set I didn't spend time on icons, fonts, color or copy. Took a very quick approach to thi. 
-As per missing pictures I cropped from the layout provided, and made use of those. 
+As per task set I didn't spend time on icons, fonts, color or copy. Took a very quick approach to this. 
+As per missing pictures I cropped from the layout pdf provided, and made use of this. 
 Decided to do the slide show with vanilla javascript as it wouldn't show you any javascript knowledge if I had just used the Bootstrap Carousel. 
 
 # Hurdles
 
-- First problem I had with this test was with the overlaping telegraph page, Whilst I caould get it to overlap, also getting it to be responsive was tricky. I decided in mobile view this wasn't necessary. 
-- Second problem I had was making the slide show responsive, in retro spective I would have built the whole thing in javascript 
+- First problem I had with this test was with the overlapping telegraph page, Whilst I could get it to overlap, also getting it to be responsive was tricky. I decided in mobile view this wasn't necessary. 
+- Second problem I had was making the slide show responsive, in retrospect I would have built the whole thing in javascript 
 dynamically creating the html elements and inserting them.  Decided not to as I would need to know the width of the images before they are rendered. 
 
 # Further Iteration. 
@@ -26,6 +26,6 @@ dynamically creating the html elements and inserting them.  Decided not to as I 
 - Paid more attention to colors by using a color picker, by opening the pdf in my browser. 
 - Slider could be improved by adding a safety for clicking while the images are sliding. 
 - Hamburger Button, could have animated the svg paths on hover. 
-- Addition of a button to scroll back to the top of the page int the bottom right corner. 
+- Addition of a button to scroll back to the top of the page from the bottom right corner. 
 
 
